@@ -1,0 +1,23 @@
+{
+  "name": "daily-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "jest": "^26.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergkornienko/daily-challenge.git"
+  },
+  "author": "sergkornienko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sergkornienko/daily-challenge/issues"
+  },
+  "homepage": "https://github.com/sergkornienko/daily-challenge#readme"
+}
