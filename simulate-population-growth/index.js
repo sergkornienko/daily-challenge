@@ -8,6 +8,11 @@ const nbYear = (initialPopulation, percent, aug, expectedPopulation) => {
   return years;
 };
 
+const nbYearRecursively = (initialPopulation, percent, aug, expectedPopulation) => 
+  initialPopulation < expectedPopulation
+    ? 1 + nbYearRecursively(initialPopulation + initialPopulation * percent / 100 + aug, percent, aug, expectedPopulation)
+    : 0;
+
 module.exports = {
-  nbYear,
+  nbYear: nbYearRecursively,
 };
