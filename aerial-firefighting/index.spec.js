@@ -1,6 +1,6 @@
 const { waterbombs } = require('./index');
 
-describe('likes', () => {
+describe('waterbombs', () => {
   it('should make separate waterbomb when have building', () => {
     expect(waterbombs('xxYxx', 3)).toBe(2);
     expect(waterbombs('xxxxYxYx', 5)).toBe(3);
