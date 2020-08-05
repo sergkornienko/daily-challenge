@@ -24,13 +24,13 @@ const coins = (coinsArr) => {
 
     while(left > 0 && index < coinsArr.length) {
       if (left >= coinsArr[index]) {
-        left -= coinsArr[index];
-        count++;
-      } else {
-        index++;
+        const coinCount = Math.floor(left / coinsArr[index]);
+        left -= coinsArr[index] * coinCount;
+        count += coinCount;
       }
-    };
-    
+      index++;
+    }
+
     return count;
   }
 }
