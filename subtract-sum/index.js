@@ -124,7 +124,7 @@ const subtractSum = (num, notFirstIteration) => {
 }
 
 /**
- * bsc with such order in fruits arrau result always will be "apple" 🤷‍♂️
+ * bsc with such order in fruits array result always will be "apple" 🤷‍♂️
  * @param {number} num - unused param
  * @returns {string}
  */
