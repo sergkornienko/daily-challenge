@@ -25,11 +25,11 @@ const duplicateEncoder = (initialString) => {
 }
 
 /**
- * @param {string} loverCaseString
+ * @param {string} lowerCaseString
  * @param {string} item
  * @returns {boolean}
  */
-const isOnlyInString = (loverCaseString, item) => loverCaseString.indexOf(item) === loverCaseString.lastIndexOf(item);
+const isOnlyInString = (lowerCaseString, item) => lowerCaseString.indexOf(item) === lowerCaseString.lastIndexOf(item);
 /**
  * convert a string to a new string where each character in the new string is "(" 
  * if that character appears only once in the original string,
@@ -38,10 +38,10 @@ const isOnlyInString = (loverCaseString, item) => loverCaseString.indexOf(item) 
  * @returns {string}
  */
 const duplicateEncoderStr = (initialString) => {
-  const loverCaseString = initialString.toLowerCase();
+  const lowerCaseString = initialString.toLowerCase();
   return initialString
     .split('')
-    .map((item) => isOnlyInString(loverCaseString, item.toLowerCase()) ? '(' : ')')
+    .map((item) => isOnlyInString(lowerCaseString, item.toLowerCase()) ? '(' : ')')
     .join('');
 }
 
